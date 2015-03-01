@@ -1,15 +1,14 @@
 require 'sinatra/base'
 require 'multi_json'
-module Sinatra
 
-  # = Sinatra::JSON
+module Sinatra
   #
-  # <tt>Sinatra::JSON</tt> adds a helper method, called +json+, for (obviously)
-  # json generation.
+  # {Sinatra::JSON} adds a helper method, called {JSON#json json}, for
+  # (obviously) json generation.
   #
-  # == Usage
+  # ## Usage
   #
-  # === Classic Application
+  # ### Classic Application
   #
   # In a classic application simply require the helper, and start using it:
   #
@@ -23,7 +22,7 @@ module Sinatra
   #
   #     # The rest of your classic application code goes here...
   #
-  # === Modular Application
+  # ### Modular Application
   #
   # In a modular application you need to require the helper, and then tell the
   # application you will use it:
@@ -41,50 +40,50 @@ module Sinatra
   #       # The rest of your modular application code goes here...
   #     end
   #
-  # === Encoders
+  # ### Encoders
   #
-  # By default it will try to call +to_json+ on the object, but if it doesn't
+  # By default it will try to call `to_json` on the object, but if it doesn't
   # respond to that message, it will use its own rather simple encoder.  You can
-  # easily change that anyways. To use +JSON+, simply require it:
+  # easily change that anyways. To use `JSON`, simply require it:
   #
-  #   require 'json'
+  #     require 'json'
   #
-  # The same goes for <tt>Yajl::Encoder</tt>:
+  # The same goes for `Yajl::Encoder`:
   #
-  #   require 'yajl'
+  #     require 'yajl'
   #
   # For other encoders, besides requiring them, you need to define the
-  # <tt>:json_encoder</tt> setting.  For instance, for the +Whatever+ encoder:
+  # `:json_encoder` setting.  For instance, for the `Whatever` encoder:
   #
-  #   require 'whatever'
-  #   set :json_encoder, Whatever
+  #     require 'whatever'
+  #     set :json_encoder, Whatever
   #
-  # To force +json+ to simply call +to_json+ on the object:
+  # To force `json` to simply call `to_json` on the object:
   #
-  #   set :json_encoder, :to_json
+  #     set :json_encoder, :to_json
   #
   # Actually, it can call any method:
   #
-  #   set :json_encoder, :my_fancy_json_method
+  #     set :json_encoder, :my_fancy_json_method
   #
-  # === Content-Type
+  # ### Content-Type
   #
   # It will automatically set the content type to "application/json".  As
-  # usual, you can easily change that, with the <tt>:json_content_type</tt>
+  # usual, you can easily change that, with the `:json_content_type`
   # setting:
   #
-  #   set :json_content_type, :js
+  #     set :json_content_type, :js
   #
-  # === Overriding the Encoder and the Content-Type
+  # ### Overriding the Encoder and the Content-Type
   #
-  # The +json+ helper will also take two options <tt>:encoder</tt> and
-  # <tt>:content_type</tt>.  The values of this options are the same as the
-  # <tt>:json_encoder</tt> and <tt>:json_content_type</tt> settings,
+  # The `json` helper will also take two options `:encoder` and
+  # `:content_type`.  The values of this options are the same as the
+  # `:json_encoder` and `:json_content_type` settings,
   # respectively.  You can also pass those to the json method:
   #
-  #   get '/'  do
-  #     json({:foo => 'bar'}, :encoder => :to_json, :content_type => :js)
-  #   end
+  #     get '/'  do
+  #       json({:foo => 'bar'}, :encoder => :to_json, :content_type => :js)
+  #     end
   #
   module JSON
     class << self
