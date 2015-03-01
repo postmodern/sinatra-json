@@ -1,7 +1,7 @@
-require 'multi_json'
-
 require 'spec_helper'
+require 'multi_json'
 require 'okjson'
+require 'sinatra/json'
 
 shared_examples_for "a json encoder" do |lib, const|
   before do
