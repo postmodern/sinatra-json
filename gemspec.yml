@@ -1,0 +1,20 @@
+name: sinatra-json
+summary: The json method for sinatra
+description: sinatra/json extracted from sinatra-contrib.
+license: MIT
+authors:
+  - Konstantin Haase
+  - Postmodern
+email: postmodern.mod3@gmail.com
+homepage: https://github.com/postmodern/sinatra-json#readme
+
+dependencies:
+  multi_json: ~> 1.0
+  sinatra: ~> 1.0
+
+development_dependencies:
+  rake: ~> 10.0
+  rubygems-tasks: ~> 0.2
+  rspec: ~> 2.4
+  rack-test: ~> 0.6
+  yard: ~> 0.8
