@@ -5,6 +5,8 @@
 * [Documentation](http://rubydoc.info/gems/sinatra-json/frames)
 * [Email](mailto:postmodern.mod3 at gmail.com)
 
+[![Build Status](https://secure.travis-ci.org/postmodern/sinatra-json.svg)](https://travis-ci.org/postmodern/sinatra-json)
+
 ## Description
 
 {Sinatra::JSON}, extracted from [sinatra-contrib].
