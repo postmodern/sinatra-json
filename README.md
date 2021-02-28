@@ -1,6 +1,7 @@
 # sinatra-json
 
 [![CI](https://github.com/postmodern/sinatra-json/actions/workflows/ruby.yml/badge.svg)](https://github.com/postmodern/sinatra-json/actions/workflows/ruby.yml)
+[![Code Climate](https://codeclimate.com/github/postmodern/sinatra-json.g.svg)](https://codeclimate.com/github/postmodern/rubygems-tasks)
 
 * [Homepage](https://github.com/postmodern/sinatra-json#readme)
 * [Issues](https://github.com/postmodern/sinatra-json/issues)
