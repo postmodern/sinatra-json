@@ -1,11 +1,11 @@
 # sinatra-json
 
+[![CI](https://github.com/postmodern/sinatra-json/actions/workflows/ruby.yml/badge.svg)](https://github.com/postmodern/sinatra-json/actions/workflows/ruby.yml)
+
 * [Homepage](https://github.com/postmodern/sinatra-json#readme)
 * [Issues](https://github.com/postmodern/sinatra-json/issues)
 * [Documentation](http://rubydoc.info/gems/sinatra-json/frames)
 * [Email](mailto:postmodern.mod3 at gmail.com)
-
-[![Build Status](https://secure.travis-ci.org/postmodern/sinatra-json.svg)](https://travis-ci.org/postmodern/sinatra-json)
 
 ## Description
 
