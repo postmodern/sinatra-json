@@ -14,8 +14,3 @@ dependencies:
 
 development_dependencies:
   bundler: ">= 2.0.0"
-  rake: ~> 10.0
-  rubygems-tasks: ~> 0.2
-  rspec: ~> 2.4
-  rack-test: ~> 0.6
-  yard: ~> 0.8

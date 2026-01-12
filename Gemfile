@@ -15,5 +15,13 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rake'
+  gem 'rubygems-tasks', '~> 0.2'
+  gem 'rspec',          '~> 3.0'
+  gem 'rack-test',      '~> 0.6'
+
   gem 'kramdown'
+  gem 'redcarpet',       platform: :mri
+  gem 'yard',           '~> 0.9'
+  gem 'yard-spellcheck', require: false
 end
