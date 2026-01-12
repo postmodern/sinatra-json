@@ -13,6 +13,7 @@ dependencies:
   sinatra: ~> 1.0
 
 development_dependencies:
+  bundler: ">= 2.0.0"
   rake: ~> 10.0
   rubygems-tasks: ~> 0.2
   rspec: ~> 2.4
